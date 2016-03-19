@@ -17,4 +17,6 @@ The last feature added to this extension is the possibility to start and stop th
 
 ### Future improvements
 
-Currently the services invoked to start and stop the torrent daemon as well as the downloader service are hard coded in the extension source code. Would be very nice to give the possibility to setup this configurations with a GUI for that purpose and store it with the chrome extension storage API.
+~~Currently the services invoked to start and stop the torrent daemon as well as the downloader service are hard coded in the extension source code. Would be very nice to give the possibility to setup this configurations with a GUI for that purpose and store it with the chrome extension storage API.~~
+
+From the previous, now done, improvement we end up with an extension that is configurable and so you can set the endpoint for your own instance of omxpiclient which you can setup on the *options* of the extension
