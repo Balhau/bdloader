@@ -1,25 +1,11 @@
 //Event that run right after page DOM loaded
 
 
-//Recognized patterns to download
-var urlsPattern=[
-  {
-    'pattern':'https://www.youtube.com/watch?',
-    'poster': 'http://pi.balhau.net/youtube/downloader'
-  }
-];
-
-var apiTorrents={
-  'start' : 'http://pi.balhau.net/starttorrents',
-  'stop' : 'http://pi.balhau.net//stoptorrents'
-}
-
-
 //This will check the url against a list of recognized patterns
 var getPattern=function(url){
-  for(var i=0;i<urlsPattern.length;i++){
-    if(url!=null && url.split(urlsPattern[i].pattern).length>1){
-      return urlsPattern[i];
+  for(var i=0;i<downloadPatterns.length;i++){
+    if(url!=null && url.split(downloadPatterns[i].pattern).length>1){
+      return downloadPatterns[i];
     }
   }
   return null;
@@ -41,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   btnStart.addEventListener('click',function(){
-    $.get( apiTorrents.start, function( data ) {
+    $.get( api.start_torrents, function( data ) {
         alert( "Start was performed: " +data);
       });
   });
 
   btnStop.addEventListener('click',function(){
-    $.get( apiTorrents.stop, function( data ) {
+    $.get( api.stop_torrents, function( data ) {
         alert( "Stop was performed: " +data);
       });
   });
@@ -58,5 +44,5 @@ document.addEventListener('DOMContentLoaded', function() {
       .done(function( data ) {
         alert( "Downloaded: " + url );
       });
-});
+      });
     });
