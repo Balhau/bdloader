@@ -8,7 +8,7 @@ This is a [chrome extension](https://en.wikipedia.org/wiki/Google_Chrome_extensi
 
 ### On the name
 
-BDLoader is the shortname for Balhau Downloader.
+BDLoader is the shortname for Balhau Downloader. Which was the first idea for the development of this extension. However the name is now a little bit mis-representative of the extension because it already does some more things
 
 
 ### Torrents start/stop
