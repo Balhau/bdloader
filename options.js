@@ -1,12 +1,20 @@
 //Execute after DOM loaded
 
 document.addEventListener('DOMContentLoaded', function() {
-  var btnClearPatterns  = document.getElementById('btnClearPatterns');
-  var btnAddPattern     = document.getElementById('btnAddPattern');
+  syncLocalData(function(url){
 
-  btnClearPatterns.addEventListener('click',function(){
-    clearLocalData();
+    var btnClearPatterns  = document.getElementById('btnSetApiURL');
+    var txtPatternValue   = document.getElementById('txtPatternValue')
+    var txtCurrValue      = document.getElementById('txtCurrValue');
+
+    txtCurrValue.innerText=url;
+
+    txtPatternValue.value=url;
+
+    btnClearPatterns.addEventListener('click',function(){
+      saveURLLocalStore(txtPatternValue.value);
+      txtCurrValue.innerText=txtPatternValue.value;
+    });
+
   });
-
-  syncLocalData();
 })
