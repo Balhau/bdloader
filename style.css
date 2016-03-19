@@ -1,0 +1,13 @@
+button.action{
+    border: none;
+    background: #C0C0C0;
+    font-size: 1.5em;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+body{
+  background: #912121;
+  color: white;
+  font-family: monospace;
+}
