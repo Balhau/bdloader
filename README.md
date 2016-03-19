@@ -9,3 +9,12 @@ This is a [chrome extension](https://en.wikipedia.org/wiki/Google_Chrome_extensi
 ### On the name
 
 BDLoader is the shortname for Balhau Downloader.
+
+
+### Torrents start/stop
+
+The last feature added to this extension is the possibility to start and stop the torrent service.
+
+### Future improvements
+
+Currently the services invoked to start and stop the torrent daemon as well as the downloader service are hard coded in the extension source code. Would be very nice to give the possibility to setup this configurations with a GUI for that purpose and store it with the chrome extension storage API.
