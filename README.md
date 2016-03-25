@@ -24,3 +24,19 @@ The next feature consists in listing all the pending requests available in the s
 ### Configurable API endpoint
 
 From the previous, now done, improvement we end up with an extension that is configurable and so you can set the endpoint for your own instance of omxpiclient which you can setup on the *options* of the extension
+
+
+### Look and Feel
+
+Currently the chrome extension lacks good tast design so it is pretty lame visually speaking. Nevertheless it works, and for programmers that always come in first place. The main application looks just like this
+
+ ![bdownloader](http://shared.balhau.net/imgs/bdownloader.png)
+
+
+There is also a option window where you can feed your omxclient instance
+
+![options](http://shared.balhau.net/imgs/bdownloader_extension_menu.png)
+
+And the extensions menu it appears like this
+
+![extensions_menu](http://shared.balhau.net/imgs/bdownloader_extension_menu.png)
