@@ -30,12 +30,12 @@ From the previous, now done, improvement we end up with an extension that is con
 
 Currently the chrome extension lacks good tast design so it is pretty lame visually speaking. Nevertheless it works, and for programmers that always come in first place. The main application looks just like this
 
- ![bdownloader](http://shared.balhau.net/imgs/bdownloader.png)
+![bdownloader](http://shared.balhau.net/imgs/bdownloader.png)
 
 
 There is also a option window where you can feed your omxclient instance
 
-![options](http://shared.balhau.net/imgs/bdownloader_extension_menu.png)
+![options](http://shared.balhau.net/imgs/bdownloader_options.png)
 
 And the extensions menu it appears like this
 
