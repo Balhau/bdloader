@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
           h+="</div>";
         }
         divPendingRequests.innerHTML=h
-        setTimeout(getPendingRequests,500000);
+        setTimeout(getPendingRequests,5000);
       });
     };
 
