@@ -16,14 +16,39 @@ document.addEventListener('DOMContentLoaded', function() {
   syncLocalData(function(url){
     $.get( url, function( data ) {
 
+    console.log("HOLA MUNDO");
+
     API=JSON.parse(data);
 
     var downloadResource = document.getElementById('btnDownload');
     var btnStart = document.getElementById('btnStart');
     var btnStop = document.getElementById('btnStop');
+    var divPendingRequests = document.getElementById('pendingRequests');
 
     var url=null;
     var pattern = null;
+
+    var getPendingRequests=function(){
+      var d=divPendingRequests;
+      $.get(API.api.list_downloads, function(data){
+        var jdata=JSON.parse(data)
+        console.log(jdata);
+        var h="";
+        for(var i in jdata){
+          var entry=jdata[i]
+          console.log(entry);
+          console.log(entry);
+          h+="<div class='row'>";
+          h+="<div class=\"left\">"+entry.service+"</div>";
+          h+="<div class=\"right\">"+entry.url+"</div>";
+          h+="</div>";
+        }
+        divPendingRequests.innerHTML=h
+        setTimeout(getPendingRequests,500000);
+      });
+    };
+
+    getPendingRequests()
 
     //Disable the button if the url is not valid for parsing
     chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {

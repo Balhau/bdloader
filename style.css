@@ -12,6 +12,30 @@ body{
   font-family: monospace;
 }
 
+div.table{
+  width:100%;
+  overflow: auto;
+  background: white;
+  color: black;
+  margin-top: 10px;
+}
+
+div.row{
+  clear: both;
+  padding:5px;
+}
+
+div.left{
+  text-transform: uppercase;
+  font-family: monospace;
+  float: left;
+}
+
+div.right{
+
+}
+
+
 div.options{
   background: #C1C1C1;
   color: black;
