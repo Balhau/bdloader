@@ -19,9 +19,9 @@ The last feature added to this extension is the possibility to start and stop th
 
 ~~Currently the services invoked to start and stop the torrent daemon as well as the downloader service are hard coded in the extension source code. Would be very nice to give the possibility to setup this configurations with a GUI for that purpose and store it with the chrome extension storage API.~~
 
-~Now would be nice to have a ability to list all the pending requests available in the server side application.~
+~~Now would be nice to have a ability to list all the pending requests available in the server side application.~~
 
-Well the look and feel is not the best you ever see. We can check by yourself on the *Look and Feel* section. So I guess that would be pretty interesting if I find time to cleanup a little bit the vintage visual felling. By the way, since the design is pretty much inexistent I did choose red as the main theme color to combine with the blood that drop from your eyes when you look at it! Hope you don't get blind. So, it's pretty much that. Turn this a supportable visual experience.
+Well the look and feel is not the best you ever see. We can check by yourself on the *Look and Feel* section. So I guess that would be pretty interesting if I find time to cleanup a little bit the vintage visual felling. By the way, since the design is pretty much inexistent I did choose red as the main theme color to combine with the blood that drop from your eyes when you look at it! Hope you don't get blind. So, it's pretty much that. Turn this a visual experience with minimal acceptance criteria.
 
 ### Configurable API endpoint
 
